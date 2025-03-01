@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="addNumbers()">Add</button>
+    <p>Result: <span id="addResult">0</span></p>
+
+    <input type="number" id="num3" placeholder="Enter first number">
+    <input type="number" id="num4" placeholder="Enter second number">
+    <button onclick="subtractNumbers()">Difference</button>
+    <p>Result: <span id="subResult">0</span></p>
+
+    <input type="number" id="num5" placeholder="Enter first number">
+    <input type="number" id="num6" placeholder="Enter second number">
+    <button onclick="multiplyNumbers()">Multiply</button>
+    <p>Result: <span id="multipleResult">0</span></p>
+
+
+    <input type="number" id="num7" placeholder="Enter first number">
+    <input type="number" id="num8" placeholder="Enter second number">
+    <button onclick="divNumbers()">Divided</button>
+    <p>Result: <span id="divResult">0</span></p>
+
+
+
+<script>
+
+  function addNumbers() {
+
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
+    let sum = num1 + num2;
+    document.getElementById("addResult").innerText = sum;
+
+  }
+
+
+
+  function subtractNumbers() {
+
+    let num3 = Number(document.getElementById("num3").value);
+    let num4 = Number(document.getElementById("num4").value);
+    let difference = num3 - num4;
+    document.getElementById("subResult").innerText = difference;
+
+  }
+
+
+  function multiplyNumbers(){
+    num5 = Number(document.getElementById("num5").value)
+    num6 = Number(document.getElementById("num6").value)
+    multiple = num5 * num6
+    document.getElementById("multipleResult").innerText = multiple
+    
+  }
+
+  function divNumbers(){
+    num7 = Number(document.getElementById("num7").value)
+    num8 = Number(document.getElementById("num8").value)
+    divided = num7 / num8
+    document.getElementById("divResult").innerText = divided
+  }
+
+</script>
+    
+</body>
+</html>

@@ -22,3 +22,6 @@ let q = 12
 console.log("Basic:", q)
 q %= 5
 console.log("modulus and assign:" , q)
+
+
+let jaicchetai = document.getElementById()
